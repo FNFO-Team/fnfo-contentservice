@@ -1,0 +1,38 @@
+{
+  "name": "fnfo-contentservice",
+  "version": "1.0.0",
+  "description": "Content microservice for FNFO (Friday Night Funkin’ Online) — manages song and asset delivery from AWS S3 storage, serving content dynamically to players without overloading the game servers.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FNFO-Team/fnfo-contentservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FNFO-Team/fnfo-contentservice/issues"
+  },
+  "homepage": "https://github.com/FNFO-Team/fnfo-contentservice#readme",
+  "dependencies": {
+    "@azure/storage-blob": "^12.29.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.1",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^25.0.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
